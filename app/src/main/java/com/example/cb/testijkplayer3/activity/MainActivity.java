@@ -1,7 +1,9 @@
 package com.example.cb.testijkplayer3.activity;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.example.cb.testijkplayer3.R;
@@ -82,6 +84,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
+        Log.e("MainAcitvity", "onStop");
+        if (mBackPressed || !mVideoView.isBackgroundPlayEnabled()) {
+            mVideoView.stopPlayback();
+            mVideoView.release(true);
+            mVideoView.stopBackgroundPlay();
+        } else {
+            mVideoView.enterBackground();
+        }
+        IjkMediaPlayer.native_profileEnd();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
 
 //        if (mBackPressed || !mVideoView.isBackgroundPlayEnabled()) {
 //            mVideoView.stopPlayback();
@@ -94,16 +110,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Log.e("MainAcitvity", "onConfigurationChanged");
+        Log.d("MainAcitvity", "onConfigurationChanged");
+    }
 
-        if (mBackPressed || !mVideoView.isBackgroundPlayEnabled()) {
-            mVideoView.stopPlayback();
-            mVideoView.release(true);
-            mVideoView.stopBackgroundPlay();
-        } else {
-            mVideoView.enterBackground();
-        }
-        IjkMediaPlayer.native_profileEnd();
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("MainAcitvity","onStart");
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("MainAcitvity", "onResume");
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("MainAcitvity", "onPause");
     }
 }
