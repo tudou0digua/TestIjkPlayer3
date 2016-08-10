@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.cb.testijkplayer3.widget.media.IjkVideoView
+    <tv.danmaku.ijk.media.player.widget.media.IjkVideoView
         android:id="@+id/video_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
