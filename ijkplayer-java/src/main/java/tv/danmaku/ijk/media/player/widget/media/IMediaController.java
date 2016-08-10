@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.cb.testijkplayer3.widget.media;
+package tv.danmaku.ijk.media.player.widget.media;
 
 import android.view.View;
 import android.widget.MediaController;

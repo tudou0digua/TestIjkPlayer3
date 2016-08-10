@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.cb.testijkplayer3.widget.services;
+package tv.danmaku.ijk.media.player.widget.services;
 
 import android.app.Service;
 import android.content.Context;

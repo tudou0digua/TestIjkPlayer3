@@ -5,12 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.example.cb.testijkplayer3.R;
-import com.example.cb.testijkplayer3.widget.Settings;
-import com.example.cb.testijkplayer3.widget.media.AndroidMediaController;
-import com.example.cb.testijkplayer3.widget.media.IjkVideoView;
 
 import tv.danmaku.ijk.media.player.IMediaPlayer;
 import tv.danmaku.ijk.media.player.IjkMediaPlayer;
+import tv.danmaku.ijk.media.player.widget.Settings;
+import tv.danmaku.ijk.media.player.widget.media.AndroidMediaController;
+import tv.danmaku.ijk.media.player.widget.media.IjkVideoView;
 
 public class MainActivity extends AppCompatActivity {
     private IjkVideoView mVideoView;

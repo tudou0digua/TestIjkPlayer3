@@ -1,4 +1,4 @@
-package com.example.cb.testijkplayer3.widget.media;
+package tv.danmaku.ijk.media.player.widget.media;
 
 import android.content.Context;
 import android.os.Handler;
@@ -7,13 +7,12 @@ import android.util.SparseArray;
 import android.view.View;
 import android.widget.TableLayout;
 
-import com.example.cb.testijkplayer3.R;
-
 import java.util.Locale;
 
 import tv.danmaku.ijk.media.player.IMediaPlayer;
 import tv.danmaku.ijk.media.player.IjkMediaPlayer;
 import tv.danmaku.ijk.media.player.MediaPlayerProxy;
+import tv.danmaku.ijk.media.player.R;
 
 public class InfoHudViewHolder {
     private TableLayoutBinder mTableLayoutBinder;

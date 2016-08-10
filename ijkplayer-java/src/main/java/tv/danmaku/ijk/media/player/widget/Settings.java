@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package com.example.cb.testijkplayer3.widget;
+package tv.danmaku.ijk.media.player.widget;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import com.example.cb.testijkplayer3.R;
+import tv.danmaku.ijk.media.player.R;
+
 
 public class Settings {
     private Context mAppContext;
